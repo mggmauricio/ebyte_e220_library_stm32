@@ -6,7 +6,6 @@ Facilita a configuração e transmissão de dados entre dois módulos via **UART
 ---
 
 ## 📌 **Recursos**
-✅ Comunicação confiável entre módulos LoRa E220  
 ✅ Suporte para **modo de configuração e operação**  
 ✅ Funções para **leitura e escrita de registradores**  
 ✅ Testado em **STM32** com HAL  
@@ -27,20 +26,20 @@ Facilita a configuração e transmissão de dados entre dois módulos via **UART
 
 ### **2️⃣ Clonar o Repositório**
 ```sh
-git clone https://github.com/seu-usuario/LoRa-E220-STM32.git
-cd LoRa-E220-STM32
+git clone https://github.com/mggmauricio/ebyte_e220_library_stm32.git
+cd ebyte_e220_library_stm32
 ```
 
 ### **3️⃣ Adicionar ao Projeto STM32**
-- Copie os arquivos `lora_e220.h` e `lora_e220.c` para seu projeto.
-- Inclua `#include "lora_e220.h"` no `main.c`.
+- Copie os arquivos `e220.h` e `e220.c` para seu projeto.
+- Inclua `#include "e220.h"` no `main.c`.
 
 ---
 
 ## ⚡ **Exemplo de Código**
 ### **Transmissor**
 ```c
-#include "lora_e220.h"
+#include "e220.h"
 
 LoRa_E220_t lora;
 uint8_t msg[32] = "Hello LoRa!";
@@ -66,7 +65,7 @@ int main(void) {
 
 ### **Receptor**
 ```c
-#include "lora_e220.h"
+#include "e220.h"
 
 LoRa_E220_t lora;
 uint8_t buffer[32];
