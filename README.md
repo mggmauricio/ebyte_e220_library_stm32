@@ -26,20 +26,20 @@ Simplifies configuration and data transmission between two LoRa modules via **UA
 
 ### **2️⃣ Clone the Repository**
 ```sh
-git clone https://github.com/your-username/LoRa-E220-STM32.git
-cd LoRa-E220-STM32
+git clone https://github.com/mggmauricio/ebyte_e220_library_stm32.git
+cd ebyte_e220_library_stm32
 ```
 
 ### **3️⃣ Add to STM32 Project**
-- Copy `lora_e220.h` and `lora_e220.c` into your project.
-- Include `#include "lora_e220.h"` in your `main.c`.
+- Copy `e220.h` and `e220.c` into your project.
+- Include `#include "e220.h"` in your `main.c`.
 
 ---
 
 ## ⚡ **Example Code**
 ### **Transmitter**
 ```c
-#include "lora_e220.h"
+#include "e220.h"
 
 LoRa_E220_t lora;
 uint8_t msg[32] = "Hello LoRa!";
@@ -65,7 +65,7 @@ int main(void) {
 
 ### **Receiver**
 ```c
-#include "lora_e220.h"
+#include "e220.h"
 
 LoRa_E220_t lora;
 uint8_t buffer[32];
